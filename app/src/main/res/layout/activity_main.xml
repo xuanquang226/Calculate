@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quang.calculate.MainActivity">
+
+    <TextView
+        android:id="@+id/txtA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Nhập số A:" />
+
+    <TextView
+        android:id="@+id/txtB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtA"
+        android:layout_below="@+id/txtA"
+        android:layout_marginBottom="50dp"
+        android:text="Nhập số B:" />
+
+    <EditText
+        android:id="@+id/edtNhapA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtA"
+        android:layout_toRightOf="@+id/txtA"
+        android:hint="Nhập số A"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtNhapB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtB"
+        android:layout_alignLeft="@id/edtNhapA"
+        android:hint="Nhập số B"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtB"
+        android:layout_below="@+id/txtB"
+        android:text="Result:" />
+
+    <EditText
+        android:id="@+id/edtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtResult"
+        android:layout_alignLeft="@id/edtNhapB"
+         />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnOK"
+        android:layout_toRightOf="@+id/btnOK"
+        android:text="Cancel"
+        android:textAllCaps="false" />
+</RelativeLayout>
+
+
